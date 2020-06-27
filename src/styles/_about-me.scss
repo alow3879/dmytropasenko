@@ -1,0 +1,330 @@
+.about-me {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	background: url('../images/backgrounds/about-me-bg.png') 50% 50% no-repeat;
+	background-size: cover;
+	.container {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+
+		@media (max-width: 768px) {
+			justify-content: center;
+		}
+	}
+}
+
+.about-me-text {
+	width: 55%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+
+	@media (min-width: 320px) {
+		width: 90%;
+		.progress-bar {
+			width: 120px;
+			height: 5px;
+		}
+		.skill {
+			&:nth-child(1) {
+				.agregate {
+					width: 120px / 100 * 95;
+				}
+			}
+			&:nth-child(2) {
+				.agregate {
+					width: 120px / 100 * 75;
+				}
+			}
+			&:nth-child(3) {
+				.agregate {
+					width: 120px / 100 * 70;
+				}
+			}
+			&:nth-child(4) {
+				.agregate {
+					width: 120px / 100 * 65;
+				}
+			}
+			&:nth-child(5) {
+				.agregate {
+					width: 120px / 100 * 55;
+				}
+			}
+		}
+	}
+	@media (min-width: 576px) {
+		width: 80%;
+		.progress-bar {
+			width: 200px;
+			height: 5px;
+		}
+		.skill {
+			&:nth-child(1) {
+				.agregate {
+					width: 200px / 100 * 95;
+				}
+			}
+			&:nth-child(2) {
+				.agregate {
+					width: 200px / 100 * 75;
+				}
+			}
+			&:nth-child(3) {
+				.agregate {
+					width: 200px / 100 * 70;
+				}
+			}
+			&:nth-child(4) {
+				.agregate {
+					width: 200px / 100 * 65;
+				}
+			}
+			&:nth-child(5) {
+				.agregate {
+					width: 200px / 100 * 55;
+				}
+			}
+		}
+	}
+
+	@media (min-width: 768px) {
+		width: 70%;
+		.progress-bar {
+			width: 250px;
+			height: 7px;
+		}
+		.skill {
+			&:nth-child(1) {
+				.agregate {
+					width: 250px / 100 * 95;
+				}
+			}
+			&:nth-child(2) {
+				.agregate {
+					width: 250px / 100 * 75;
+				}
+			}
+			&:nth-child(3) {
+				.agregate {
+					width: 250px / 100 * 70;
+				}
+			}
+			&:nth-child(4) {
+				.agregate {
+					width: 250px / 100 * 65;
+				}
+			}
+			&:nth-child(5) {
+				.agregate {
+					width: 250px / 100 * 55;
+				}
+			}
+		}
+	}
+
+	@media (min-width: 992px) {
+		.progress-bar {
+			width: 300px;
+		}
+		.skill {
+			&:nth-child(1) {
+				.agregate {
+					width: 300px / 100 * 95;
+				}
+			}
+			&:nth-child(2) {
+				.agregate {
+					width: 300px / 100 * 75;
+				}
+			}
+			&:nth-child(3) {
+				.agregate {
+					width: 300px / 100 * 70;
+				}
+			}
+			&:nth-child(4) {
+				.agregate {
+					width: 300px / 100 * 65;
+				}
+			}
+			&:nth-child(5) {
+				.agregate {
+					width: 300px / 100 * 55;
+				}
+			}
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.progress-bar {
+			width: 320px;
+		}
+		.skill {
+			&:nth-child(1) {
+				.agregate {
+					width: 320px / 100 * 95;
+				}
+			}
+			&:nth-child(2) {
+				.agregate {
+					width: 320px / 100 * 75;
+				}
+			}
+			&:nth-child(3) {
+				.agregate {
+					width: 320px / 100 * 70;
+				}
+			}
+			&:nth-child(4) {
+				.agregate {
+					width: 320px / 100 * 65;
+				}
+			}
+			&:nth-child(5) {
+				.agregate {
+					width: 320px / 100 * 55;
+				}
+			}
+		}
+	}
+}
+
+.about-me-title {
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 300;
+	align-self: flex-start;
+
+	@media (max-width: 992px) {
+		font-size: 30px;
+	}
+
+	@media (max-width: 768px) {
+		font-size: 35px;
+		margin: 0px auto 10px auto;
+	}
+
+	@media (max-width: 576px) {
+		font-size: 20px;
+	}
+}
+
+.about-me-description {
+	width: 400px;
+	text-align: justify;
+	align-self: flex-start;
+	font-size: 20px;
+	margin-top: 15px;
+
+	@media (max-width: 992px) {
+		font-size: 16px;
+		width: 300px;
+	}
+
+	@media (max-width: 768px) {
+		font-size: 18px;
+		width: 350px;
+		margin: auto;
+	}
+
+	@media (max-width: 576px) {
+		font-size: 10px;
+		width: 200px;
+		margin: auto;
+	}
+}
+
+.photo-between-text {
+	display: none;
+	width: 70%;
+	margin: 15px auto;
+	img {
+		width: 100%;
+	}
+
+	@media (max-width: 768px) {
+		display: block;
+	}
+
+	@media (min-width: 320px) {
+		width: 70%;
+	}
+
+	@media (min-width: 400px) {
+		width: 50%;
+	}
+
+	@media (min-width: 576px) {
+		width: 70%;
+	}
+	
+}
+
+.about-me-photo {
+	width: 40%;
+	display: flex;
+	justify-content: flex-end;
+	img {
+		width: 100%;
+	}
+
+	@media (max-width: 768px) {
+		display: none;		
+	}
+
+
+}
+
+.skills {
+	margin-top: 20px;
+	align-self: flex-start;
+
+	@media (max-width: 768px) {
+		margin: 0px auto;
+	}
+}
+
+
+
+.percent {
+	margin-bottom: -5px;
+
+	@media (max-width: 576px) {
+		font-size: 10px;
+	}
+}
+
+.progress-bar {
+	width: 350px;
+	height: 10px;
+	display: inline-block;
+	background: rgba(255,255,255, .5);
+	border-radius: 10px;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+}
+
+.agregate {
+	position: absolute;
+	height: 10px;
+	background: #fff;
+}
+
+.skill-title {
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-left: 35px;
+
+	@media (max-width: 992px) {
+		margin-left: 10px;
+	}
+
+	@media (max-width: 576px) {
+		font-size: 10px;
+	}
+}
